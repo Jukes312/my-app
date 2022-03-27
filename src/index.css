@@ -5,15 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  margin-top: 30vh;
-}
-
-.parent {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 30vh;
 }
 
 input {
@@ -52,6 +48,13 @@ img {
   margin: 0;
   width: 5rem;
   align-self: center;
+}
+
+.Result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .copy {
