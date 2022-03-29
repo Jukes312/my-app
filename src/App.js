@@ -10,7 +10,7 @@ function App() {
   const [color,setColor] = useState('');
   const [hex,setHex] = useState(null);
   const [isDark,setisDark] = useState(false)
-  const [isVivible,setIsVivible] = useState(false)
+  const [isVisible,setIsVisible] = useState(false)
 
 document.body.style.backgroundColor = color;
 
@@ -18,9 +18,7 @@ const isbackgroundDark = ()=>{
   setisDark(!isDark);
 }
 
-const copyText = ()=>{
-  navigator.clipboard.writeText(hex)
-}
+
 
  
   return (
@@ -33,16 +31,16 @@ const copyText = ()=>{
        color={color}
        setColor={setColor}
        hex={hex}
-       setIsVivible={setIsVivible}
+       setIsVisible={setIsVisible}
        colorNames={colorNames}
        />
       <Result 
-      isVivible={isVivible}
+      isVisible={isVisible}
       hex={hex}
       isDark={isDark}
       copyImg={copyImg}
       isbackgroundDark={isbackgroundDark}
-      copyText={copyText}
+      
       />
       </div>
  
